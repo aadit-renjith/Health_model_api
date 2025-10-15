@@ -99,12 +99,12 @@ def predict():
             result = {
                 "status": "success",
                 "prediction": "normal",
-                "details": "All vitals are within safe limits according to the model. ✅"
+                "details": "All vitals are within safe limits according to the model. "
             }
         else:
             result = {
                 "status": "success",
-                "prediction": "anomaly detected 🚨",
+                "prediction": "anomaly detected ",
                 # If the model predicts an anomaly, but the rule-based check found nothing 
                 # (due to the model catching complex interactions), use the model's catch-all.
                 "abnormal_vitals": anomalies if anomalies else ["Model detected an irregular pattern."]
