@@ -115,7 +115,7 @@ def read_latest_vitals_from_firebase():
     try:
         # Query for the most recent reading
         readings_ref = db.collection('users').document(HARDCODED_USER_ID).collection('health_readings')
-        docs = readings_ref.order_by('timestamp_unix', direction=firestore.Query.DESCENDING).limit(1).stream()
+        docs = readings_ref.order_by('timestamp', direction=firestore.Query.DESCENDING).limit(1).stream()
         
         for doc in docs:
             data = doc.to_dict()
