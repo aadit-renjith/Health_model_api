@@ -15,7 +15,7 @@ API_KEY = os.getenv("API_KEY", "aadit123securekey")
 MODEL_PATH = "model/xgboost_anomaly_model.pkl"
 
 # Hardcoded user ID from your Firebase structure
-HARDCODED_USER_ID = "KNC4mIXcZ0Vp3t8SvhUk841FOv43"
+HARDCODED_USER_ID = "KNC4mIXcZ0Vp3t8SvhUk841FOvF2"
 
 # --- Firebase Initialization ---
 try:
